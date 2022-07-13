@@ -1,13 +1,9 @@
 import { Home } from "./components/Home";
 import Login from "./components/Login";
+import Router from "./Router";
 
 function App() {
-    return (
-        <>
-            <Home />
-            <Login />
-        </>
-    );
+    return <Router />;
 }
 
 export default App;

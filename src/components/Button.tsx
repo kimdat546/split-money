@@ -1,14 +1,16 @@
 interface Props {
-  onClick: () => any;
-  children: React.ReactNode;
-  className?: string;
+    onClick: () => any;
+    children: React.ReactNode;
+    className?: string;
 }
 
-export const Button = ({ className, ...rest }: Props) => {
-  return (
-    <button
-      className={`flex h-10 flex-1 items-center justify-center transition rounded bg-gray-200 md:hover:bg-gray-300 ${className}`}
-      {...rest}
-    />
-  );
+const Button = ({ className, ...rest }: Props) => {
+    return (
+        <button
+            className={`flex flex-1 items-center justify-center bg-gradient-to-r from-[#7569FF] to-[#D869FF] hover:bg-[#fff] ${className}`}
+            {...rest}
+        />
+    );
 };
+
+export default Button;
